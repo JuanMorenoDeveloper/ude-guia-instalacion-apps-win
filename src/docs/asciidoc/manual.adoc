@@ -1,0 +1,114 @@
+= Manual de configuración de ambientes Prog. Aplicaciones Distribuidas Java/.Net
+Juan Moreno <earth001@gmail.com>
+v1.0, 2017-04-07
+:example-caption!:
+ifndef::imagesdir[:imagesdir: images]
+
+== Introducción
+
+El objetivo de este manual es configurar un entorno de desarrollo para el curso de Desarrollo de Aplicaciones Distribuidas Java/.Net de la carrera Analista en Tecnología Informática de la Universidad de la Empresa.
+
+== Instalación JDK 8u162
+
+El JDK lo podemos obtener desde el sitio oficial de Oracle en http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+Al llegar ahí podremos visualizar las diferentes opciones para descargar, considerar que para el curso se usará el JDK 8.
+
+.Opciones de descarga de Java SE 8u161/162, se debe elegir el JDK.
+image::oracle-jdk-1.png[scaledwidth=75%]
+
+En este caso descargaremos la versión de 64 bits.
+
+.Alternativas de descarga para el JDK 8
+image::oracle-jdk-2.png[scaledwidth=75%]
+
+TIP: Considerar que escoger cualquier descarga debemos aceptar la licencia primero.]
+
+[TIP]
+====
+La arquitectura de nuestro SO Windows la podremos ver en las propiedades del sistema.
+
+.Propiedades del equipo
+image::oracle-jdk-3.png[scalewidth=75%]
+
+.Tipo de sistema
+image::oracle-jdk-4.png[scalewidth=75%]
+====
+
+El proceso de instalación es similar a una instalación común en Windows. El wizard nos irá guiando durante el proceso.
+
+.Inicio de la instalación
+image::oracle-jdk-5.png[scalewidth=75%]
+
+.Selección de paquetes y directorio de instalación, en nuestro caso va ser el default
+image::oracle-jdk-6.png[scalewidth=75%]
+
+.Confirmamos la carpeta destino
+image::oracle-jdk-7.png[scalewidth=75%]
+
+.Esperamos que el asistente copie los archivos
+image::oracle-jdk-8.png[scalewidth=75%]
+
+.Finalizamos la instalación
+image::oracle-jdk-5.png[scalewidth=75%]
+
+== Configuración de variables de entorno de Java
+Para poder usar java desde la línea de comandos (`cmd.exe`) vamos a necesitar agregar el directorio de los binarios de java al path del sistema y crear la variable `JAVA_HOME`.
+
+Para ello vamos a ir nuevamente a las propiedades del sistema, una vez allí vamos a entrar a la configuración avanzada.
+
+.Configuración avanzada del sistema
+image::env-java-1.png[]
+
+Luego vamos a las opciones avanzadas y entramos a las variables de entorno.
+
+.Opciones avanzadas
+image::env-java-2.png[]
+
+En el listado que nos aparece seleccionamos la variable `Path` y le damos editar.
+
+.Variables de entorno
+image::env-java-3.png[]
+
+Vamos a agregar al final de la variable la siguiente entrada:
+
+[source]
+----
+;C:\Program Files\Java\jdk1.8.0_162\bin; <--1-->
+----
+<1> Puede variar según la ruta de instalación.
+
+Considerar que debe ir el `;` al principio y al final sin espacios.
+
+.Edición variable path
+image::env-java-4.png[]
+
+La variable JAVA_HOME si no existe se debe crear seleccionando `Nueva` en las variables del sistema.
+
+.Variable `JAVA_HOME` en las variables del sistema
+image::env-java-5.png[]
+
+La variable debe apuntar a la ruta completa de instalación, sin el directorio `bin`.
+
+[source]
+----
+C:\Program Files\Java\jdk1.8.0_162
+----
+
+Para probar que todo quedo correctamente configurado marcamos `Aceptar` en las variables de entorno y en las opciones del sistema y abrimos una consola del sistema `cmd.exe` (Esta en el menú de inicio). Y copiamos los siguientes comandos
+
+[source]
+----
+java -version
+javac -version
+echo %JAVA_HOME%
+----
+
+Donde deberíamos obtener una salida como la de la figura.
+
+.Validación de la configuración de las variables de entorno
+image::env-java-6.png[]
+
+== Instalación Android Studio
+
+Para instalar Android Studio necesitamos descargar el instalador del siguiente enlace https://developer.android.com/studio/index.html

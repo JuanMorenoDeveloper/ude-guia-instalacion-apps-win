@@ -1,0 +1,3 @@
+= Guía de instalación de Ambiente de Desarrollo para el Curso de Desarrollo de Aplicaciones Distribuidas Java/.Net de UDE
+
+Para compilar use `$ mvn clean install`
