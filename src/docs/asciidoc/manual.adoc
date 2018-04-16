@@ -45,11 +45,11 @@ image::oracle-jdk-6.png[scalewidth=75%]
 
 .Confirmamos la carpeta destino
 image::oracle-jdk-7.png[scalewidth=75%]
-
 .Esperamos que el asistente copie los archivos
 image::oracle-jdk-8.png[scalewidth=75%]
 
 .Finalizamos la instalación
+
 image::oracle-jdk-5.png[scalewidth=75%]
 
 == Configuración de variables de entorno de Java
@@ -109,6 +109,106 @@ Donde deberíamos obtener una salida como la de la figura.
 .Validación de la configuración de las variables de entorno
 image::env-java-6.png[]
 
-== Instalación Android Studio
+== Instalación Android Studio 3.1
 
-Para instalar Android Studio necesitamos descargar el instalador del siguiente enlace https://developer.android.com/studio/index.html
+Para instalar Android Studio necesitamos descargar el instalador del siguiente enlace https://developer.android.com/studio/index.html, y seguir los siguientes pasos, (se recomienda siempre instalar la última versión disponible):
+
+.Enlace de descarga de Android Studio v3.1
+image::as-1.png[]
+
+.Aceptamos la licencia y descargamos el instalador
+image::as-2.png[]
+
+.Iniciamos el instalador
+image::as-3.png[]
+
+.Escogemos los componentes a instalar
+image::as-4.png[]
+
+.Elegimos el directorio de instalación
+image::as-5.png[]
+
+.Elegimos el directorio en el menú de programas
+image::as-6.png[]
+
+.Iniciamos la copia de archivos
+image::as-7.png[]
+
+.Continuamos luego que termine de copiar los archivos
+image::as-8.png[]
+
+.Finalizamos e iniciamos Android Studio
+image::as-9.png[]
+
+.Al iniciar Android Studio nos va indicar si queremos importar la configuración de instalaciones anteriores, en este caso le decimos que no
+image::as-10.png[]
+
+.Luego nos va iniciar un asistente para el setup inicial
+image::as-11.png[]
+
+.De allí escogemos la configuración standard
+image::as-12.png[]
+
+.Elegimos el tema del IDE
+image::as-13.png[]
+
+.Confirmamos el setup y finalizamos
+image::as-14.png[]
+
+.Esperamos que descargue los componentes
+image::as-15.png[]
+
+.Y finalizamos
+image::as-16.png[]
+
+Al ejecutar Android Studio nos desplegara la siguiente ventana:
+
+.Ventana inicial de Android Studio
+image::as-17.png[]
+
+[IMPORTANT]
+====
+Por defecto Android Studio descargara el último SDK disponible, que para la fecha de este manual es el de Android Oreo 8.1 (API Level 27), si queremos descargar mas versiones deberemos seguir el siguiente procedimiento.
+====
+
+=== Instalación de APIs adicionales
+
+.Abrir el SDK Manager
+image::as-18.png[]
+
+.Seleccionar los SDK a descargar, en esta imagen se descargan del API 21 (Lollipop 5.0) al 26 (Oreo 8.0)
+image::as-19.png[]
+
+.Confirmamos la descarga
+image::as-20.png[]
+
+.Descargamos los componentes
+image::as-21.png[]
+
+.Aceptamos los términos y condiciones
+image::as-22.png[]
+
+.Instalamos los componentes
+image::as-23.png[]
+
+.Al finalizar la instalación, los componentes quedan en estado "Installed"
+image::as-24.png[]
+
+[TIP]
+====
+Para una mejor agilidad en el desarrollo de aplicaciones con Android Studio se recomienda usar directamente un teléfono Android para las pruebas, por lo que se deberá descargar el SDK según la versión de Android del teléfono que tengamos. En la siguiente sección se indicará como ver la versión de Android de un teléfono.
+====
+
+=== Ver la versión de Android de un teléfono
+Android se actualiza periódicamente pero no todos los fabricantes actualizan los dispositivos con las últimas versiones, por lo que conviene verificar la versión que tenemos instalada para descargar el SDK apropiado para hacer las pruebas de nuestras aplicaciones. Para visualizarla podemos seguir los siguientes pasos:
+
+.Ir al menú de opciones de nuestro teléfono
+image::settings-phone-1.png[scalewidth=75%]
+
+.Abrir la opción de "Sistema"
+image::settings-phone-2.png[scalewidth=75%]
+
+.Abrir la opción "Acerca del teléfono", la versión correcta saldrá en la entrada "Android Version"
+image::settings-phone-3.png[scalewidth=75%]
+
+==== Instalación IntelliJ IDEA 2018.1
