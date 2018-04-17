@@ -22,7 +22,7 @@ En este caso descargaremos la versión de 64 bits.
 .Alternativas de descarga para el JDK 8
 image::oracle-jdk-2.png[scaledwidth=75%]
 
-TIP: Considerar que escoger cualquier descarga debemos aceptar la licencia primero.]
+IMPORTANT: Considerar que escoger cualquier descarga debemos aceptar la licencia primero.
 
 [TIP]
 ====
@@ -53,7 +53,7 @@ image::oracle-jdk-8.png[scalewidth=75%]
 image::oracle-jdk-5.png[scalewidth=75%]
 
 == Configuración de variables de entorno de Java
-Para poder usar java desde la línea de comandos (`cmd.exe`) vamos a necesitar agregar el directorio de los binarios de java al path del sistema y crear la variable `JAVA_HOME`.
+Para poder usar java desde la línea de comandos (`cmd.exe`) vamos a necesitar agregar el directorio de los binarios de java al `path` del sistema y crear la variable `JAVA_HOME`.
 
 Para ello vamos a ir nuevamente a las propiedades del sistema, una vez allí vamos a entrar a la configuración avanzada.
 
@@ -111,7 +111,7 @@ image::env-java-6.png[]
 
 == Instalación Android Studio 3.1
 
-Para instalar Android Studio necesitamos descargar el instalador del siguiente enlace https://developer.android.com/studio/index.html, y seguir los siguientes pasos, (se recomienda siempre instalar la última versión disponible):
+Para instalar Android Studio necesitamos descargar el instalador del siguiente enlace https://developer.android.com/studio/index.html, luego seguir los siguientes pasos, (se recomienda siempre instalar la última versión disponible):
 
 .Enlace de descarga de Android Studio v3.1
 image::as-1.png[]
@@ -212,9 +212,125 @@ image::settings-phone-2.png[]
 image::settings-phone-3.png[]
 
 == Instalación IntelliJ IDEA 2018.1
+Podemos obtener la última versión de IntelliJ del portal de Jetbrains en https://www.jetbrains.com/idea/download/#section=windows, para el curso usaremos la versión community.
+
+.Opción de descarga para la versión community de IntelliJ IDEA
+image::ij-1.png[]
+
+Una vez descarguemos el binario, el proceso de instalación es simple.
+
+.Iniciamos el instalador y avanzamos
+image::ij-2.png[]
+
+.Confirmamos el directorio destino
+image::ij-3.png[]
+
+.Elegimos el tipo de shortcut
+image::ij-4.png[]
+
+.Escogemos la carpeta del menú de programas
+image::ij-5.png[]
+
+.Esperamos que copie los archivos
+image::ij-6.png[]
+
+.Finalizamos la instalación
+image::ij-7.png[]
+
+Ejecutamos IntelliJ y configuramos
+
+.Iniciamos con una nueva configuración
+image::ij-8.png[]
+
+.Seleccionamos el tema
+image::ij-9.png[]
+
+.Habilitamos los plugins default
+image::ij-10.png[]
+
+.IntelliJ IDEA listo para usar
+image::ij-11[]
 
 == Instalación Gradle 4.6
+Durante el curso para la compilación de nuestras aplicaciones usaremos Gradle. Para instalarlo necesitamos descargar el binario del sitio https://gradle.org/install/#manually.
+
+.Opciones de descarga de Gradle
+image::gradle-1.png[]
+
+.Lo descomprimos en C:\
+image::gradle-2.png[]
+
+.Para poderlo usar desde la línea de comandos necesitamos agregar la ruta de la carpeta `bin` al `path`
+image::gradle-3.png[]
+
+.Colocando la siguiente ruta `;C:\gradle-4.6-bin\gradle-4.6\bin;`
+image::gradle-4.png[]
+
+.Confirmamos la instalación en la consola con el comando `gradle -v`
+image::gradle-5.png[]
 
 == Instalación Git 2.16
+Para el control de versiones de las aplicaciones usaremos git, podemos descargar la versión para Windows desde https://git-scm.com/.
+
+.Instalador para Windows
+image::git-1.png[]
+
+.Iniciamos el instalador
+image::git-2.png[]
+
+.Confirmamos ruta destino
+image::git-3.png[]
+
+.Confirmamos los componentes por defecto
+image::git-4.png[]
+
+.Elegimos la carpeta del directorio de programas
+image::git-5.png[]
+
+.Elegimos el editor predeterminado
+image::git-6.png[]
+
+.Ajustamos la configuración del `path`
+image::git-7.png[]
+
+.Configuramos la librería para tráfico HTTPS
+image::git-8.png[]
+
+.Elegimos el tipo de fin de línea
+image::git-9.png[]
+
+.Seleccionamos el emulador de terminal
+image::git-10.png[]
+
+.Configuramos las opciones adicionales
+image::git-11.png[]
+
+.Esperamos que el instalador copie los archivos
+image::git-12.png[]
+
+.Finalizamos la instalación
+image::git-13.png[]
+
+.Comprobamos la instalación con el menú contextual en un directorio, seleccionando "Git Bash"
+image::git-14.png[]
+
+.Consola de Git
+image::git-15.png[]
 
 == Instalación Advanced REST Client 10.0
+Para hacer pruebas funcionales con los web services que usaremos en el curso usaremos el plugin para Google Chrome: "Advanced Rest Client" (ARC), que se encuentra disponible en la siguiente ruta:
+https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo
+
+Una vez allí procedemos de la siguiente manera:
+
+.Seleccionamos "Añadir a Chrome"
+image::rest-chrome-1.png[]
+
+.Confirmamos "Añadir aplicación"
+image::rest-chrome-2.png[]
+
+.Seleccionamos "Iniciar aplicación"
+image::rest-chrome-3.png[]
+
+.Ventana principal de ARC
+image::rest-chrome-4.png[]
