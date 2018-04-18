@@ -8,6 +8,17 @@ ifndef::imagesdir[:imagesdir: images]
 
 El objetivo de este manual es configurar un entorno de desarrollo para el curso de Desarrollo de Aplicaciones Distribuidas Java/.Net de la carrera Analista en Tecnología Informática de la Universidad de la Empresa.
 
+== Arquitectura del sistema operativo Windows
+Para obtener el mejor rendimiento debemos escoger los instaladores de acuerdo a la arquitectura de nuestro sistema operativo, en Windows la podremos ver en las propiedades del sistema.
+
+.Propiedades del equipo
+image::oracle-jdk-3.png[scalewidth=75%]
+
+.Tipo de sistema
+image::oracle-jdk-4.png[scalewidth=75%]
+
+En este caso nuestra arquitectura es de 64bits.
+
 == Instalación JDK 8u162
 
 El JDK lo podemos obtener desde el sitio oficial de Oracle en http://www.oracle.com/technetwork/java/javase/downloads/index.html
@@ -22,18 +33,7 @@ En este caso descargaremos la versión de 64 bits.
 .Alternativas de descarga para el JDK 8
 image::oracle-jdk-2.png[scaledwidth=75%]
 
-IMPORTANT: Considerar que escoger cualquier descarga debemos aceptar la licencia primero.
-
-[TIP]
-====
-La arquitectura de nuestro SO Windows la podremos ver en las propiedades del sistema.
-
-.Propiedades del equipo
-image::oracle-jdk-3.png[scalewidth=75%]
-
-.Tipo de sistema
-image::oracle-jdk-4.png[scalewidth=75%]
-====
+IMPORTANT: Considerar que para escoger cualquier descarga debemos aceptar la licencia primero.
 
 El proceso de instalación es similar a una instalación común en Windows. El wizard nos irá guiando durante el proceso.
 
@@ -172,6 +172,7 @@ Por defecto Android Studio descargara el último SDK disponible, que para la fec
 ====
 
 === Instalación de APIs adicionales
+Para instalar APIs adicionales usamos el SDK manager que viene con Android Studio.
 
 .Abrir el SDK Manager
 image::as-18.png[]
@@ -203,13 +204,13 @@ Para una mejor agilidad en el desarrollo de aplicaciones con Android Studio se r
 Android se actualiza periódicamente pero no todos los fabricantes actualizan los dispositivos con las últimas versiones, por lo que conviene verificar la versión que tenemos instalada para descargar el SDK apropiado para hacer las pruebas de nuestras aplicaciones. Para visualizarla podemos seguir los siguientes pasos:
 
 .Ir al menú de opciones de nuestro teléfono
-image::settings-phone-1.png[]
+image::settings-phone-1.png[scalewidth=15%]
 
 .Abrir la opción de "Sistema"
-image::settings-phone-2.png[]
+image::settings-phone-2.png[scalewidth=15%]
 
-.Abrir la opción "Acerca del teléfono", la versión correcta saldrá en la entrada "Android Version"
-image::settings-phone-3.png[]
+.Abrir la opción "Acerca del teléfono", la versión correcta saldrá en la entrada "Android Version". En este caso la versión del dispositivo es Android 8.1 (Oreo / API 27)
+image::settings-phone-3.png[scalewidth=15%]
 
 == Instalación IntelliJ IDEA 2018.1
 Podemos obtener la última versión de IntelliJ del portal de Jetbrains en https://www.jetbrains.com/idea/download/#section=windows, para el curso usaremos la versión community.
@@ -249,7 +250,7 @@ image::ij-9.png[]
 image::ij-10.png[]
 
 .IntelliJ IDEA listo para usar
-image::ij-11[]
+image::ij-11.png[]
 
 == Instalación Gradle 4.6
 Durante el curso para la compilación de nuestras aplicaciones usaremos Gradle. Para instalarlo necesitamos descargar el binario del sitio https://gradle.org/install/#manually.
