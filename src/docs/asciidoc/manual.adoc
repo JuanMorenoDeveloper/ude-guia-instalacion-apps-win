@@ -48,6 +48,18 @@ image::openjdk-6.png[scalewidth=75%]
 .Finalizamos la instalación
 image::openjdk-7.png[scalewidth=75%]
 
+== Instalación Kotlin 1.3.31
+
+Durante el curso usaremos Kotlin como lenguaje principal de desarrollo. Para poder usarlo desde la línea de comandos necesitaremos instalar el Kotlin Compiler.
+
+Para ello seguiremos los siguientes pasos:
+
+.Descargar la última versión desde el apartado de releases en Github (https://github.com/JetBrains/kotlin/releases/tag/v1.3.31)
+image::kotlin-1.png[scalewidth=75%]
+
+.Descomprimir en el directorio raiz del sistema (C:)
+image::kotlin-2.png[scalewidth=75%]
+
 == Configuración de variables de entorno
 
 === Variables para uso de Java
@@ -93,7 +105,7 @@ La variable debe apuntar a la ruta completa de instalación, sin el directorio `
 C:\Program Files\AdoptOpenJDK\jdk-8.0.212.03-hotspot
 ----
 
-Para probar que todo quedo correctamente configurado marcamos `Aceptar` en las variables de entorno y en las opciones del sistema y abrimos una consola del sistema `cmd.exe` (Esta en el menú de inicio). Y copiamos los siguientes comandos
+Para probar que todo quedo correctamente configurado marcamos `Aceptar` en las variables de entorno y en las opciones del sistema y abrimos una consola del sistema `cmd.exe` (Esta en el menú de inicio). Y copiamos los siguientes comandos:
 
 [source]
 ----
@@ -108,6 +120,31 @@ Donde deberíamos obtener una salida como la de la figura.
 image::env-java-7.png[]
 
 === Variables para uso de Kotlin
+
+Para usar el Kotlin compiler desde la línea de comandos tendremos que agregarlo al Path. Para ello repetimos lo mismo que hicimos para Java:
+
+Seleccionamos nueva y agregamos la siguiente entrada:
+
+[source]
+----
+C:\kotlinc\bin <--1-->
+----
+<1> Puede variar según la ruta de instalación.
+
+.Edición variable path
+image::env-kotlin-1.png[]
+
+Para probar que todo quedo correctamente configurado marcamos `Aceptar` en las variables de entorno y en las opciones del sistema y abrimos una *nueva* consola del sistema `cmd.exe` (Si tenemos una abierta debemos cerrarla para que tome los cambios). Y copiamos el siguiente comando
+
+[source]
+----
+kotlinc -version
+----
+
+Donde deberíamos obtener una salida como la de la figura.
+
+.Validación de la configuración de las variables de entorno
+image::env-kotlin-2.png[]
 
 == Instalación Android Studio 3.4
 
@@ -318,7 +355,7 @@ image::git-14.png[]
 .Consola de Git
 image::git-15.png[]
 
-== Instalación Advanced REST Client 10.0
+== Instalación de SoapUI
 Para hacer pruebas funcionales con los web services que usaremos en el curso usaremos el plugin para Google Chrome: "Advanced Rest Client" (ARC), que se encuentra disponible en la siguiente ruta:
 https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo
 
