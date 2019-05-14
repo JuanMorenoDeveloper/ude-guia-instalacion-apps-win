@@ -50,7 +50,7 @@ image::openjdk-7.png[scalewidth=75%]
 
 == Instalación Kotlin 1.3.31
 
-Durante el curso usaremos Kotlin como lenguaje principal de desarrollo. Para poder usarlo desde la línea de comandos necesitaremos instalar el Kotlin Compiler.
+Durante el curso tendremos a Kotlin como lenguaje de desarrollo. Para usarlo desde la línea de comandos necesitaremos instalar el Kotlin Compiler.
 
 Para ello seguiremos los siguientes pasos:
 
@@ -59,6 +59,15 @@ image::kotlin-1.png[scalewidth=75%]
 
 .Descomprimir en el directorio raiz del sistema (C:)
 image::kotlin-2.png[scalewidth=75%]
+
+== Instalación Gradle 5.4.1
+Durante el curso para la compilación de nuestras aplicaciones usaremos Gradle. Para instalarlo necesitamos descargar el binario del sitio https://gradle.org/install/#manually.
+
+.Opciones de descarga de Gradle
+image::gradle-1.png[]
+
+.Lo descomprimos en C:\
+image::gradle-2.png[]
 
 == Configuración de variables de entorno
 
@@ -89,10 +98,10 @@ C:\Program Files\AdoptOpenJDK\jdk-8.0.212.03-hotspot\bin <--1-->
 ----
 <1> Puede variar según la ruta de instalación.
 
-.Edición variable path
+.Edición de la variable `path`
 image::env-java-4.png[]
 
-.La variable JAVA_HOME si no existe se debe crear seleccionando `Nueva` en las variables del sistema.
+.La variable `JAVA_HOME` si no existe se debe crear seleccionando `Nueva` en las variables del sistema.
 image::env-java-5.png[]
 
 .Variable `JAVA_HOME` en las variables del sistema
@@ -114,14 +123,14 @@ javac -version
 echo %JAVA_HOME%
 ----
 
-Donde deberíamos obtener una salida como la de la figura.
+Donde deberíamos obtener una salida como la de la figura:
 
 .Validación de la configuración de las variables de entorno
 image::env-java-7.png[]
 
 === Variables para uso de Kotlin
 
-Para usar el Kotlin compiler desde la línea de comandos tendremos que agregarlo al Path. Para ello repetimos lo mismo que hicimos para Java:
+Para usar el Kotlin compiler desde la línea de comandos tendremos que agregarlo al `Path`. Para ello repetimos lo mismo que hicimos para Java:
 
 Seleccionamos nueva y agregamos la siguiente entrada:
 
@@ -145,6 +154,28 @@ Donde deberíamos obtener una salida como la de la figura.
 
 .Validación de la configuración de las variables de entorno
 image::env-kotlin-2.png[]
+
+=== Variables para uso de Gradle
+
+Para poder usar Gradle desde la línea de comandos necesitamos
+agregar el directorio `bin` al `path` del sistema:
+
+.Agregamos nueva entrada en el `path`
+image::gradle-3.png[]
+
+Colocando la siguiente ruta:
+
+[source]
+----
+C:\gradle-5.4.1\bin <--1-->
+----
+<1> Puede variar según la carpeta de instalación.
+
+.Directorio `bin` de Gradle en la variable `path`
+image::gradle-4.png[]
+
+.Confirmamos la instalación en una nueva consola con el comando `gradle -v`
+image::gradle-5.png[]
 
 == Instalación Android Studio 3.4
 
@@ -177,10 +208,10 @@ image::as-8.png[]
 .Finalizamos e iniciamos Android Studio
 image::as-9.png[]
 
-.Al iniciar Android Studio nos va indicar si eliminar los archivos de configuración de las versiones previas, en este caso le decimos que sí
+.Al iniciar Android Studio nos va indicar si queremos eliminar los archivos de configuración de las versiones previas, en este caso le decimos que **sí**
 image::as-10.png[]
 
-.Al iniciar Android Studio nos va indicar si queremos importar la configuración de instalaciones anteriores, en este caso le decimos que no
+.Al iniciar Android Studio nos va indicar si queremos importar la configuración de instalaciones anteriores, en este caso le decimos que **no**
 image::as-11.png[]
 
 .Luego nos va iniciar un asistente para el setup inicial
@@ -292,31 +323,13 @@ image::ij-11.png[]
 .IntelliJ IDEA listo para usar
 image::ij-12.png[]
 
-== Instalación Gradle 5.4.1
-Durante el curso para la compilación de nuestras aplicaciones usaremos Gradle. Para instalarlo necesitamos descargar el binario del sitio https://gradle.org/install/#manually.
-
-.Opciones de descarga de Gradle
-image::gradle-1.png[]
-
-.Lo descomprimos en C:\
-image::gradle-2.png[]
-
-.Para poderlo usar desde la línea de comandos necesitamos agregar la ruta de la carpeta `bin` al `path`
-image::gradle-3.png[]
-
-.Colocando la siguiente ruta `C:\gradle-5.4.1\bin`
-image::gradle-4.png[]
-
-.Confirmamos la instalación en una nueva consola la consola con el comando `gradle -v`
-image::gradle-5.png[]
-
-== Instalación Git 2.16
+== Instalación Git 2.21.0
 Para el control de versiones de las aplicaciones usaremos git, podemos descargar la versión para Windows desde https://git-scm.com/.
 
 .Instalador para Windows
 image::git-1.png[]
 
-.Iniciamos el instalador
+.Iniciamos el instalador y confirmamos la licencia
 image::git-2.png[]
 
 .Confirmamos ruta destino
@@ -331,32 +344,35 @@ image::git-5.png[]
 .Elegimos el editor predeterminado
 image::git-6.png[]
 
-.Ajustamos la configuración del `path`
+.Elegimos la configuración para la línea de comandos
 image::git-7.png[]
 
-.Configuramos la librería para tráfico HTTPS
+.Elegimos el ejecutable SSH
 image::git-8.png[]
 
-.Elegimos el tipo de fin de línea
+.Elegimos la librería para tráfico HTTPS
 image::git-9.png[]
 
-.Seleccionamos el emulador de terminal
+.Configuramos el salto de línea
 image::git-10.png[]
 
-.Configuramos las opciones adicionales
+.Configuramos el emulador de terminal
 image::git-11.png[]
 
-.Esperamos que el instalador copie los archivos
+.Seleccionamos las opciones adicionales
 image::git-12.png[]
 
-.Finalizamos la instalación
+.Esperamos que el instalador copie los archivos
 image::git-13.png[]
 
-.Comprobamos la instalación con el menú contextual en un directorio, seleccionando "Git Bash"
+.Finalizamos la instalación
 image::git-14.png[]
 
-.Consola de Git
+.Comprobamos la instalación con el menú contextual en un directorio, seleccionando "Git Bash"
 image::git-15.png[]
+
+.Consola de Git
+image::git-16.png[]
 
 == Instalación de SoapUI 5.5.0
 Para hacer pruebas funcionales con los web services que usaremos en el curso usaremos SoapUI Open Source. Para descargarlo debemos ir a la siguiente ruta:
