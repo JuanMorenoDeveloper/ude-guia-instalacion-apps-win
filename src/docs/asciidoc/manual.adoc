@@ -358,20 +358,35 @@ image::git-14.png[]
 .Consola de Git
 image::git-15.png[]
 
-== Instalación de SoapUI
-Para hacer pruebas funcionales con los web services que usaremos en el curso usaremos el plugin para Google Chrome: "Advanced Rest Client" (ARC), que se encuentra disponible en la siguiente ruta:
-https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo
+== Instalación de SoapUI 5.5.0
+Para hacer pruebas funcionales con los web services que usaremos en el curso usaremos SoapUI Open Source. Para descargarlo debemos ir a la siguiente ruta:
+https://www.soapui.org/downloads/soapui.html
 
 Una vez allí procedemos de la siguiente manera:
 
-.Seleccionamos "Añadir a Chrome"
-image::rest-chrome-1.png[]
+.Seleccionamos "Download SoapUI Open Source"
+image::soapui-1.png[]
 
-.Confirmamos "Añadir aplicación"
-image::rest-chrome-2.png[]
+.Iniciamos el instalador
+image::soapui-2.png[]
 
-.Seleccionamos "Iniciar aplicación"
-image::rest-chrome-3.png[]
+.Seleccionamos el directorio de instalación
+image::soapui-3.png[]
 
-.Ventana principal de ARC
-image::rest-chrome-4.png[]
+.Dejamos seleccionados los componentes default
+image::soapui-4.png[]
+
+.Seleccionamos el directorio para los tutoriales
+image::soapui-5.png[]
+
+.Seleccionamos el directorio del menú de inicio
+image::soapui-6.png[]
+
+.Creamos el acceso directo
+image::soapui-7.png[]
+
+.Esperamos la instalación
+image::soapui-8.png[]
+
+.Confirmamos
+image::soapui-9.png[]
