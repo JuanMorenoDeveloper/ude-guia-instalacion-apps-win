@@ -1,0 +1,41 @@
+= Procedimiento para ejecutar un proyecto en IntelliJ Community
+Juan Moreno <earth001@gmail.com>
+v1.0, 2019-05-14
+:example-caption!:
+ifndef::imagesdir[:imagesdir: images]
+
+== Introducción
+
+El objetivo de este procedimiento es configurar y ejecutar una aplicación con IntelliJ Community.
+
+== Pasos
+
+.Abrir IntelliJ Community
+image::p-ij-1.png[]
+
+.Seleccionar "Import project"
+image::p-ij-2.png[]
+
+.Seleccionamos la ruta del proyecto "practico02-kotlin-testing"
+image::p-ij-3.png[]
+
+.Lo importaremos desde un modelo externo, en este caso **Gradle**
+image::p-ij-4.png[]
+
+.Confirmamos las opciones de importación
+image::p-ij-5.png[]
+
+.Esperamos que el IntelliJ termine la compilación
+image::p-ij-6.png[]
+
+.Seleccionamos el archivo `src/main/kotlin/uy.edu.ude/Main.kt` y le **run**
+image::p-ij-7.png[]
+
+.Esperamos la salida en la consola del IDE
+image::p-ij-8.png[]
+
+.Finalizamos IntelliJ
+image::p-ij-9.png[]
+
+.Finalizamos el proceso en ejecución
+image::p-ij-10.png[]

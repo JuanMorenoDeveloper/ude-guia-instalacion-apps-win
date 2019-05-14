@@ -1,4 +1,4 @@
-= Procedimiento para cargar un proyecto en Android Studio
+= Procedimiento para ejecutar un proyecto en Android Studio
 Juan Moreno <earth001@gmail.com>
 v2.0, 2019-05-14
 :example-caption!:
