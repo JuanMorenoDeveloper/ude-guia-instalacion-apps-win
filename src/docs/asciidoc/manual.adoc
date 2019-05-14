@@ -289,7 +289,7 @@ image::ij-10.png[]
 .IntelliJ IDEA listo para usar
 image::ij-11.png[]
 
-== Instalación Gradle 4.6
+== Instalación Gradle 5.4.1
 Durante el curso para la compilación de nuestras aplicaciones usaremos Gradle. Para instalarlo necesitamos descargar el binario del sitio https://gradle.org/install/#manually.
 
 .Opciones de descarga de Gradle
@@ -301,10 +301,10 @@ image::gradle-2.png[]
 .Para poderlo usar desde la línea de comandos necesitamos agregar la ruta de la carpeta `bin` al `path`
 image::gradle-3.png[]
 
-.Colocando la siguiente ruta `;C:\gradle-4.6-bin\gradle-4.6\bin;`
+.Colocando la siguiente ruta `C:\gradle-5.4.1\bin`
 image::gradle-4.png[]
 
-.Confirmamos la instalación en la consola con el comando `gradle -v`
+.Confirmamos la instalación en una nueva consola la consola con el comando `gradle -v`
 image::gradle-5.png[]
 
 == Instalación Git 2.16
