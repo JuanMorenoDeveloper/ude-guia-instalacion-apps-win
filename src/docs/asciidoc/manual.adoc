@@ -249,7 +249,7 @@ image::settings-phone-2.png[scalewidth=15%]
 .Abrir la opción "Acerca del teléfono", la versión correcta saldrá en la entrada "Android Version". En este caso la versión del dispositivo es Android 8.1 (Oreo / API 27)
 image::settings-phone-3.png[scalewidth=15%]
 
-== Instalación IntelliJ IDEA 2018.1
+== Instalación IntelliJ IDEA 2019.1.2
 Podemos obtener la última versión de IntelliJ del portal de Jetbrains en https://www.jetbrains.com/idea/download/#section=windows, para el curso usaremos la versión community.
 
 .Opción de descarga para la versión community de IntelliJ IDEA
@@ -280,14 +280,17 @@ Ejecutamos IntelliJ y configuramos
 .Iniciamos con una nueva configuración
 image::ij-8.png[]
 
-.Seleccionamos el tema
+.Aceptamos la licencia
 image::ij-9.png[]
 
-.Habilitamos los plugins default
+.Seleccionamos el tema
 image::ij-10.png[]
 
-.IntelliJ IDEA listo para usar
+.Habilitamos los plugins default
 image::ij-11.png[]
+
+.IntelliJ IDEA listo para usar
+image::ij-12.png[]
 
 == Instalación Gradle 5.4.1
 Durante el curso para la compilación de nuestras aplicaciones usaremos Gradle. Para instalarlo necesitamos descargar el binario del sitio https://gradle.org/install/#manually.
