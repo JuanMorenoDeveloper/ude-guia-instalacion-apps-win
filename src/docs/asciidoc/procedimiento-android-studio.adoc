@@ -1,0 +1,68 @@
+= Procedimiento para cargar un proyecto en Android Studio
+Juan Moreno <earth001@gmail.com>
+v2.0, 2019-05-14
+:example-caption!:
+ifndef::imagesdir[:imagesdir: images]
+
+== Introducción
+
+El objetivo de este procedimiento es configurar y ejecutar una aplicación con Android Studio.
+
+== Pasos
+
+.Abrir Android Studio
+image::p-as-1.png[]
+
+.Seleccionar "Open an existing Android Studio project"
+image::p-as-2.png[]
+
+.Seleccionamos la ruta del proyecto "practico03-intro-android"
+image::p-as-3.png[]
+
+.Android Studio inicializará automáticamente la compilación, podemos validarla en la barra de estado y el menú de build (build finished y completed successfully)
+image::p-as-4.png[]
+
+.Luego seleccionamos ejecutar
+image::p-as-5.png[]
+
+.Creamos un nuevo emulador
+image::p-as-6.png[]
+
+.Va ser de tipo Phone y Pixel 2
+image::p-as-7.png[]
+
+.Seleccionamos la imagen del sistema para descargar, en este caso Pie
+image::p-as-8.png[]
+
+.Esperamos que el sistema la descargue e instale
+image::p-as-9.png[]
+
+.Finalizamos
+image::p-as-10.png[]
+
+.Seleccionamos la imagen descargada
+image::p-as-11.png[]
+
+.Configuramos el nombre de la imagen y finalizamos
+image::p-as-12.png[]
+
+.Esperamos que el dispositivo se cree
+image::p-as-13.png[]
+
+.Y lo seleccionamos de la lista
+image::p-as-14.png[]
+
+.Si aparece un problema de GPU podemos darle continuar
+image::p-as-15.png[]
+
+.Esperamos que el emulador inicie
+image::p-as-16.png[]
+
+.Y nos muestre la aplicación
+image::p-as-17.png[]
+
+.Luego apagamos el dispositivo y lo cerramos
+image::p-as-18.png[]
+
+.Cerramos Android Studio
+image::p-as-19.png[]
