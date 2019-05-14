@@ -1,6 +1,6 @@
 = Manual de configuración de ambientes Prog. Aplicaciones Distribuidas Java/.Net
 Juan Moreno <earth001@gmail.com>
-v1.0, 2017-04-07
+v2.0, 2019-05-13
 :example-caption!:
 ifndef::imagesdir[:imagesdir: images]
 
@@ -109,11 +109,11 @@ Donde deberíamos obtener una salida como la de la figura.
 .Validación de la configuración de las variables de entorno
 image::env-java-6.png[]
 
-== Instalación Android Studio 3.1
+== Instalación Android Studio 3.4
 
-Para instalar Android Studio necesitamos descargar el instalador del siguiente enlace https://developer.android.com/studio/index.html, luego seguir los siguientes pasos, (se recomienda siempre instalar la última versión disponible):
+Para instalar Android Studio necesitamos descargar el instalador del siguiente enlace https://developer.android.com/studio, luego seguir los siguientes pasos, (se recomienda siempre instalar la última versión disponible y desinstalar las versiones previas en caso que se tengan):
 
-.Enlace de descarga de Android Studio v3.1
+.Enlace de descarga de Android Studio v3.4
 image::as-1.png[]
 
 .Aceptamos la licencia y descargamos el instalador
@@ -140,56 +140,56 @@ image::as-8.png[]
 .Finalizamos e iniciamos Android Studio
 image::as-9.png[]
 
-.Al iniciar Android Studio nos va indicar si queremos importar la configuración de instalaciones anteriores, en este caso le decimos que no
+.Al iniciar Android Studio nos va indicar si eliminar los archivos de configuración de las versiones previas, en este caso le decimos que sí
 image::as-10.png[]
 
-.Luego nos va iniciar un asistente para el setup inicial
+.Al iniciar Android Studio nos va indicar si queremos importar la configuración de instalaciones anteriores, en este caso le decimos que no
 image::as-11.png[]
 
-.De allí escogemos la configuración standard
+.Luego nos va iniciar un asistente para el setup inicial
 image::as-12.png[]
 
-.Elegimos el tema del IDE
+.De allí escogemos la configuración standard
 image::as-13.png[]
 
-.Confirmamos el setup y finalizamos
+.Elegimos el tema del IDE
 image::as-14.png[]
 
-.Esperamos que descargue los componentes
+.Seleccionamos los componentes a instalar (marcamos todos)
 image::as-15.png[]
 
-.Y finalizamos
+.Confirmamos los componentes a instalar
 image::as-16.png[]
+
+.Esperamos que descarguen
+image::as-17.png[]
+
+.Y finalizamos
+image::as-18.png[]
 
 Al ejecutar Android Studio nos desplegara la siguiente ventana:
 
 .Ventana inicial de Android Studio
-image::as-17.png[]
+image::as-19.png[]
 
 [IMPORTANT]
 ====
-Por defecto Android Studio descargara el último SDK disponible, que para la fecha de este manual es el de Android Oreo 8.1 (API Level 27), si queremos descargar mas versiones deberemos seguir el siguiente procedimiento.
+Por defecto Android Studio descargara el último SDK disponible, que para la fecha de este manual es el de Android Pie 9.0 (API Level 28), si queremos descargar mas versiones deberemos seguir el siguiente procedimiento.
 ====
 
 === Instalación de APIs adicionales
 Para instalar APIs adicionales usamos el SDK manager que viene con Android Studio.
 
 .Abrir el SDK Manager
-image::as-18.png[]
-
-.Seleccionar los SDK a descargar, en esta imagen se descargan del API 21 (Lollipop 5.0) al 26 (Oreo 8.0)
-image::as-19.png[]
-
-.Confirmamos la descarga
 image::as-20.png[]
 
-.Descargamos los componentes
+.Seleccionar los SDK a descargar, en esta imagen se descargan del API 22 (Lollipop 5.1) al 27 (Oreo 8.1)
 image::as-21.png[]
 
-.Aceptamos los términos y condiciones
+.Confirmamos la descarga
 image::as-22.png[]
 
-.Instalamos los componentes
+.Descargamos los componentes
 image::as-23.png[]
 
 .Al finalizar la instalación, los componentes quedan en estado "Installed"
@@ -197,7 +197,7 @@ image::as-24.png[]
 
 [TIP]
 ====
-Para una mejor agilidad en el desarrollo de aplicaciones con Android Studio se recomienda usar directamente un teléfono Android para las pruebas, por lo que se deberá descargar el SDK según la versión de Android del teléfono que tengamos. En la siguiente sección se indicará como ver la versión de Android de un teléfono.
+Para una mejor agilidad en el desarrollo de aplicaciones con Android Studio se recomienda usar directamente un teléfono Android para las pruebas, por lo que se deberá descargar el SDK según la versión de Android del teléfono que posea. En la siguiente sección se indicará como ver la versión de Android de un teléfono.
 ====
 
 === Ver la versión de Android de un teléfono
